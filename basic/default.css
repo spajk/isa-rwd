@@ -55,7 +55,6 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
 	}
 
 
@@ -182,7 +181,7 @@
 	}
 
 	#banner img {
-		width: 1200px;
+		width: 100%;
 	}
 
 /*********************************************************************************/
@@ -225,8 +224,8 @@
 	#footer .fbox
 	{
 		float: left;
-		width: 375px;
-  		margin-right: 36px;
+		width: 30%;
+  		margin-right: 0.3333%;
 	}
 
 	#footer .fbox:last-of-type {
