@@ -7,17 +7,17 @@
 .background-switch {
     position: absolute;
     left: 0; top: 0; right: 0; bottom: 0;
-    background: #b80000;
+    background: #00b800;
 }
 
-@media screen and (min-width: 801px) and (max-width: 1200px) {
+@media screen and (min-width: 801px){
     .background-switch {
         background: #0000b8;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 1201px) {
     .background-switch {
-        background: #00b800;
+        background: #b80000;
     }
 }
