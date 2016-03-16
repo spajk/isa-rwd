@@ -9,3 +9,15 @@
     left: 0; top: 0; right: 0; bottom: 0;
     background: #b80000;
 }
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .background-switch {
+        background: #0000b8;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .background-switch {
+        background: #00b800;
+    }
+}
