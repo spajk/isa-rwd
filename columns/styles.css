@@ -17,4 +17,11 @@
     width: 33.3333%;
 }
 
+@media screen and (max-width: 800px) {
+    .content, .sidebar {
+        float: none;
+        width: auto;
+    }
+}
+
 /* implement layout degradation (the sidebar goes down) when width < 800px */
