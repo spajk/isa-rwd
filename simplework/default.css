@@ -56,7 +56,7 @@ a:hover
 .container
 {
 	margin: 0px auto;
-	width: 1200px;
+	max-width: 1200px;
 }
 
 /*********************************************************************************/
@@ -365,11 +365,12 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
-	
+
 #header-wrapper
 {
 	background: #2b2b2b url(images/banner.jpg) no-repeat center;
 	background-size: auto 100%;
+	padding: 0 15px;
 }
 
 #header
@@ -438,19 +439,49 @@ ul.contact li a.icon-rss:before
 	top: 6em;
 }
 
+#menu.active {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 5px;
+	margin: -5px;
+}
+
 #menu ul
 {
+	display: none;
+}
+
+#menu.active ul {
 	display: inline-block;
 }
 
 #menu li
 {
 	display: block;
-	float: left;
 	text-align: center;
 }
 
-#menu li a, #menu li span
+.menu-trigger {
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 801px) {
+	#menu ul
+	{
+		display: inline-block;
+	}
+
+	#menu li {
+		float: left;
+	}
+
+	.menu-trigger {
+		display: none;
+	}
+}
+
+#menu li a, #menu li span, .menu-trigger a
 {
 	display: inline-block;
 	margin-left: 1px;
@@ -467,7 +498,7 @@ ul.contact li a.icon-rss:before
 {
 }
 
-#menu .current_page_item a
+#menu .current_page_item a, .menu-trigger a
 {
 	background: #1757ae;
 	border-radius: 30px;
@@ -477,7 +508,7 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
-	
+
 
 	#header-featured
 	{
@@ -493,7 +524,7 @@ ul.contact li a.icon-rss:before
 #banner
 {
 	overflow: hidden;
-	width: 1000px;
+	max-width: 1000px;
 	text-align: center;
 	color: rgba(255,255,255,.7);
 	font-size: 1.5em;
@@ -539,6 +570,7 @@ ul.contact li a.icon-rss:before
 #wrapper
 {
 	background: #FFF;
+	padding: 0 15px;
 }
 
 #page
@@ -553,6 +585,8 @@ ul.contact li a.icon-rss:before
 	margin-top: 2em;
 }
 
+
+@media screen and (min-width: 801px) {
 /*********************************************************************************/
 /* Content                                                                       */
 /*********************************************************************************/
@@ -560,7 +594,7 @@ ul.contact li a.icon-rss:before
 	#content
 	{
 		float: left;
-		width: 700px;
+		width: 60%;
 	}
 
 /*********************************************************************************/
@@ -570,8 +604,9 @@ ul.contact li a.icon-rss:before
 	#sidebar
 	{
 		float: right;
-		width: 450px;
+		width: 35%;
 	}
+}
 
 	#stwo-col
 	{
@@ -592,13 +627,13 @@ ul.contact li a.icon-rss:before
 	#stwo-col .sbox1
 	{
 		float: left;
-		width: 210px;
+		width: 45%;
 	}
 
 	#stwo-col .sbox2
 	{
 		float: right;
-		width: 210px;
+		width: 45%;
 	}
 
 /*********************************************************************************/
@@ -703,7 +738,7 @@ ul.contact li a.icon-rss:before
 #slider
 {
 	margin: 0em auto 0em auto;
-	width: 1200px;
+	max-width: 1200px;
 	position: relative;
 }
 
@@ -717,7 +752,7 @@ ul.contact li a.icon-rss:before
 
 #slider .viewer
 {
-	width: 1000px;
+	max-width: 1000px;
 	height: 375px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -732,7 +767,7 @@ ul.contact li a.icon-rss:before
 #slider .viewer .reel .slide
 {
 	position: relative;
-	width: 1000px;
+	max-width: 1000px;
 	height: 375px;
 }
 
@@ -741,7 +776,7 @@ ul.contact li a.icon-rss:before
 	position: absolute;
 	top: 130px;
 	left: 0;
-	width: 1200px;
+	max-width: 1200px;
 	height: 80px;
 	line-height: 80px;
 	background: #111111;
@@ -757,7 +792,7 @@ ul.contact li a.icon-rss:before
 	position: absolute;
 	top: 210px;
 	left: 0;
-	width: 1200px;
+	max-width: 1200px;
 	height: 40px;
 	line-height: 40px;
 	background: #0074C6;

@@ -4,7 +4,7 @@ Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
 
-Name       : SimpleWork 
+Name       : SimpleWork
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20140225
@@ -14,6 +14,7 @@ Released   : 20140225
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
@@ -30,6 +31,7 @@ Released   : 20140225
 			<h1><a href="#">SimpleWork</a></h1>
 		</div>
 		<div id="menu">
+			<div class="menu-trigger"><a href="#">MENU</a></div>
 			<ul>
 				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
 				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
@@ -100,5 +102,11 @@ Released   : 20140225
 <div id="copyright" class="container">
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
+	jQuery('.menu-trigger a').click(function (event) {
+		jQuery('#menu').toggleClass('active');
+	});
+</script>
 </body>
 </html>
